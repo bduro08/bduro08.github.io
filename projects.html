@@ -1,21 +1,166 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
-        <title>My Projects</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Cybersecurity and networking projects by Brandon Durocher.">
+        <title>Projects | Brandon Durocher</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <a href="./index.html"><h1>Home</h1></a>
-        <div id="projects">
-            <h2>My Projects</h2>
-            <h3>Authorized Phishing-Awareness Simulation (Local Lab):</h3>
-            <p>I will create an isolated, local-only lab using a mock company and mock adversary to simulate phishing scenarios against myself.
-Moreover, I will build a mock email workflow and a mock company website using Python, Flask, and HTML to observe form interactions, session behavior, and logging.
-Then I will analyze logged interactions, perform threat modeling, and produce recommendations for detection, remediation, and create user-awareness training. Over the course of this project
-I will emphasize ethical practice: all testing will be confined to isolated environments with no real user data. The companies used in this project will be made up, and no real data will be forwarded to a real company's site.
-            </p>
-            <p>Skills that will be showcased: Python, Flask, HTML, logging/analytics, threat modeling, security awareness.</p>
-        </div>
+        <header class="site-header">
+            <a class="brand" href="index.html">Brandon Durocher</a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="projects.html" aria-current="page">Projects</a>
+                <a href="certs.html">Certifications</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="page-title">
+                <p class="eyebrow">Portfolio Work</p>
+                <h1>Projects</h1>
+                <p>
+                    A growing collection of hands-on cybersecurity, networking, and cloud projects. Each project
+                    is written to show the goal, tools used, security focus, and what I learned.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <article class="project-feature">
+                    <div>
+                        <p class="eyebrow">Completed Lab</p>
+                        <h2>Active Directory Domain Controller Lab</h2>
+                        <p>
+                            I built a Windows Server 2022 domain controller inside a virtual machine on my Linux
+                            Mint machine, created a FakeBank.local domain, and joined my Windows laptop to the
+                            domain as an employee workstation.
+                        </p>
+                        <p>
+                            The lab focused on core identity and access administration: installing Active Directory
+                            Domain Services, organizing users into OUs, creating employee and IT administrator
+                            accounts, applying Group Policy, enforcing password and lockout rules, updating policy
+                            from the command line, and verifying audit events in Event Viewer.
+                        </p>
+                        <div class="tag-list" aria-label="Active Directory project skills">
+                            <span>Windows Server 2022</span>
+                            <span>Active Directory</span>
+                            <span>Group Policy</span>
+                            <span>Domain Join</span>
+                            <span>Account Security</span>
+                            <span>Audit Logging</span>
+                        </div>
+                    </div>
+                    <aside class="callout">
+                        <h3>Lab Outcome</h3>
+                        <p>
+                            A working local domain with managed users, a joined Windows 11 endpoint, password and
+                            lockout policy enforcement, and security audit evidence.
+                        </p>
+                    </aside>
+                </article>
+
+                <div class="evidence-grid" aria-label="Active Directory lab screenshots">
+                    <figure>
+                        <img src="assets/active-directory/Installing_AD.png" alt="Installing Active Directory Domain Services on Windows Server 2022">
+                        <figcaption>Installed Active Directory Domain Services, Group Policy Management, and admin tools on DC01.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/active-directory/AD_Windows11.png" alt="Windows 11 laptop joined to the FakeBank.local domain">
+                        <figcaption>Joined the Windows laptop to the FakeBank.local domain as an employee workstation.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/active-directory/Employees@FakeBank.local.png" alt="Employee users in Active Directory Users and Computers">
+                        <figcaption>Created employee users and organized them inside the FakeBank.local domain.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/active-directory/IT_Admin_AD.png" alt="IT administrator user in Active Directory Users and Computers">
+                        <figcaption>Created a dedicated IT administrator account for privileged administration.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/active-directory/password_policy.png" alt="Password policy settings in Group Policy Management Editor">
+                        <figcaption>Configured password policy requirements such as history, maximum age, length, and complexity.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/active-directory/account_lockout_rules.png" alt="Account lockout settings in Group Policy Management Editor">
+                        <figcaption>Configured account lockout duration, threshold, and reset timing to reduce brute-force risk.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/active-directory/admin_cli_update_policies.png" alt="PowerShell showing gpupdate force completed successfully">
+                        <figcaption>Applied updated policies from an administrator PowerShell session with gpupdate /force.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/active-directory/audit_policy.png" alt="Audit policy settings in Group Policy Management Editor">
+                        <figcaption>Enabled auditing for logon events, account management, and policy changes.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/active-directory/audit_log_proof.png" alt="Security log in Event Viewer showing audit events">
+                        <figcaption>Verified security audit events in Event Viewer after applying audit policy.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="section-band">
+                <article class="project-feature">
+                    <div>
+                        <p class="eyebrow">In Progress</p>
+                        <h2>Authorized Phishing-Awareness Simulation</h2>
+                        <p>
+                            I am building an isolated, local-only lab using a mock company and mock adversary to
+                            simulate phishing scenarios against myself. The lab will include a mock email workflow
+                            and a mock company website built with Python, Flask, and HTML.
+                        </p>
+                        <p>
+                            The goal is to observe form interactions, session behavior, and logging in a controlled
+                            environment, then turn the results into threat modeling notes, detection ideas,
+                            remediation steps, and user-awareness training.
+                        </p>
+                        <div class="tag-list" aria-label="Project skills">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>HTML</span>
+                            <span>Logging</span>
+                            <span>Threat Modeling</span>
+                            <span>Security Awareness</span>
+                        </div>
+                    </div>
+                    <aside class="callout">
+                        <h3>Ethical Scope</h3>
+                        <p>
+                            This project uses fictional companies, fictional data, and an isolated local
+                            environment. No real user data is collected and no testing targets real organizations.
+                        </p>
+                        <a class="text-link" href="Phishing.Lab/phishing.lab.html">Open lab draft</a>
+                    </aside>
+                </article>
+            </section>
+
+            <section class="content-section">
+                <div class="section-heading">
+                    <p class="eyebrow">Coming Next</p>
+                    <h2>Project ideas to add</h2>
+                </div>
+                <div class="grid three-column">
+                    <article class="card">
+                        <h3>Home Network Diagram</h3>
+                        <p>Document a basic network topology, device roles, IP ranges, and security controls.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Packet Analysis Lab</h3>
+                        <p>Use Wireshark to inspect sample traffic and explain common protocols and findings.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Cloud Security Notes</h3>
+                        <p>Track AWS identity, access, storage, and logging concepts while studying cloud security.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Brandon Durocher. Built as a working portfolio for cybersecurity and networking projects.</p>
+        </footer>
     </body>
 </html>
-
