@@ -1,28 +1,99 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
-        <title>My Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Cybersecurity portfolio for Brandon Durocher, focused on security, networking, cloud, and hands-on labs.">
+        <title>Brandon Durocher | Cybersecurity Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="about">
-            <h1>Brandon Durocher</h1>
-            <h2>About Me</h2>
-            <p>Work in progress...</p>
-            <p>My name is Brandon Durocher. I'm a senior Cybersecurity student at SNHU with a current GPA of 3.12.</p>
-            <h3>Future academic goals: (//combine this line with the next\\)</h3>
-            <p>After earning my Bachelor of Science in Cybersecurity, I plan to pursue an MBA with a concentration in Information Technology Management to better bridge the gap between cybersecurity and business.</p>
-            <h3>Technical interests: </h3>
-            <p>Although my main interest is in Cybersecurity, I also have a very keen interest in Networking and Cloud Computing. 
-            I have knowledge of networking concepts but only a little hands-on experience. Furthernore, although I don't have much knowledge of Cloud Computing, 
-            I am highly interested in learning more and know I will be able to pick up concepts relatively quickly.</p>
-        </div>
-        <div id="menu">
-            <a href="./projects.html"><h2>My Projects</h2></a> 
-        
-            <a href="./contact.html"><h2>Contact Me</h2></a>
+        <header class="site-header">
+            <a class="brand" href="index.html">Brandon Durocher</a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="certs.html">Certifications</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
 
-            <a href="./certs.html"><h2>My Certifications</h2></a>
-        </div>
+        <main>
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">Cybersecurity Student | Networking | Cloud Security</p>
+                    <h1>Building practical security skills through labs, projects, and continuous learning.</h1>
+                    <p>
+                        I am a senior Cybersecurity student at Southern New Hampshire University focused on
+                        cybersecurity, networking, and cloud computing. This portfolio tracks my hands-on work,
+                        technical growth, certifications, and experience as I build toward security and IT roles.
+                    </p>
+                    <div class="button-row">
+                        <a class="button primary" href="projects.html">View Projects</a>
+                        <a class="button secondary" href="contact.html">Get in Touch</a>
+                    </div>
+                </div>
+                <aside class="hero-panel" aria-label="Portfolio highlights">
+                    <div>
+                        <span class="metric">3.12</span>
+                        <span class="metric-label">Current GPA</span>
+                    </div>
+                    <div>
+                        <span class="metric">SNHU</span>
+                        <span class="metric-label">B.S. Cybersecurity</span>
+                    </div>
+                    <div>
+                        <span class="metric">N+ / S+</span>
+                        <span class="metric-label">Certification path</span>
+                    </div>
+                </aside>
+            </section>
+
+            <section class="section-band">
+                <div class="section-heading">
+                    <p class="eyebrow">Focus Areas</p>
+                    <h2>Where I am building depth</h2>
+                </div>
+                <div class="grid three-column">
+                    <article class="card">
+                        <h3>Cybersecurity</h3>
+                        <p>
+                            Security awareness, threat modeling, ethical lab design, logging, and practical
+                            analysis of user-facing attack paths.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3>Networking</h3>
+                        <p>
+                            Network fundamentals, troubleshooting, segmentation concepts, and the infrastructure
+                            knowledge needed to understand how systems communicate.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3>Cloud Computing</h3>
+                        <p>
+                            Cloud security foundations, AWS concepts, identity and access management, and secure
+                            architecture practices.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-section split">
+                <div>
+                    <p class="eyebrow">Academic Direction</p>
+                    <h2>Long-term goal</h2>
+                </div>
+                <p>
+                    After earning my Bachelor of Science in Cybersecurity, I plan to pursue an MBA with a
+                    concentration in Information Technology Management so I can better connect cybersecurity
+                    decisions with business goals, risk, and leadership needs.
+                </p>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Brandon Durocher. Built as a working portfolio for cybersecurity and networking projects.</p>
+        </footer>
     </body>
 </html>
