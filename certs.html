@@ -1,27 +1,89 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
-        <title>My Certifications</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Certification progress and learning roadmap for Brandon Durocher.">
+        <title>Certifications | Brandon Durocher</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
-    <body>        
-        <a href="./index.html"><h1>Home</h1></a>
-        <div id="certs">
-            <h2>My Certifications</h2>
-            <p>Work in progress...</p>
-            <h3>Active Certifications in Progress</h3>
-            <ol>
-                <li>CompTIA Network+ (N10-009) Progress Bar: 76% (style work in progress)</li>
-                <li>CompTIA Security+ (SY0-701) Progress Bar: 3% (style work in progress)</li>
-            </ol>
-            <h3>Certifications I plan to pursue next</h3>
-            <ol>
-                <li>Certificate of Cloud Security Knowledge (CCSK)</li>
-                <li>AWS Certified Cloud Practitioner</li>
-                <li>AWS Certified Solutions Architect</li>
-                <li>AWS Certified Security</li>
-            </ol>
-        </div>
-    </body>
+    <body>
+        <header class="site-header">
+            <a class="brand" href="index.html">Brandon Durocher</a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="certs.html" aria-current="page">Certifications</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
 
+        <main>
+            <section class="page-title">
+                <p class="eyebrow">Learning Roadmap</p>
+                <h1>Certifications</h1>
+                <p>
+                    Current study progress and planned certifications across networking, security, and cloud.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <div class="section-heading">
+                    <p class="eyebrow">Active</p>
+                    <h2>In progress</h2>
+                </div>
+                <div class="grid two-column">
+                    <article class="card progress-card">
+                        <div class="card-title-row">
+                            <h3>CompTIA Network+ (N10-009)</h3>
+                            <span>76%</span>
+                        </div>
+                        <div class="progress-bar" aria-label="CompTIA Network+ progress">
+                            <span style="width: 76%"></span>
+                        </div>
+                        <p>Building a stronger foundation in network concepts, implementation, operations, and troubleshooting.</p>
+                    </article>
+                    <article class="card progress-card">
+                        <div class="card-title-row">
+                            <h3>CompTIA Security+ (SY0-701)</h3>
+                            <span>3%</span>
+                        </div>
+                        <div class="progress-bar" aria-label="CompTIA Security+ progress">
+                            <span style="width: 3%"></span>
+                        </div>
+                        <p>Starting the core security certification path across threats, architecture, operations, and governance.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-band">
+                <div class="section-heading">
+                    <p class="eyebrow">Planned</p>
+                    <h2>Next targets</h2>
+                </div>
+                <div class="grid two-column">
+                    <article class="card">
+                        <h3>Certificate of Cloud Security Knowledge</h3>
+                        <p>Cloud security fundamentals, shared responsibility, governance, and risk management.</p>
+                    </article>
+                    <article class="card">
+                        <h3>AWS Certified Cloud Practitioner</h3>
+                        <p>Foundational AWS services, cloud concepts, billing, security, and support models.</p>
+                    </article>
+                    <article class="card">
+                        <h3>AWS Certified Solutions Architect</h3>
+                        <p>Designing resilient, secure, and cost-aware cloud architecture.</p>
+                    </article>
+                    <article class="card">
+                        <h3>AWS Certified Security</h3>
+                        <p>Identity, detection, infrastructure protection, incident response, and data protection in AWS.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Brandon Durocher. Built as a working portfolio for cybersecurity and networking projects.</p>
+        </footer>
+    </body>
 </html>
